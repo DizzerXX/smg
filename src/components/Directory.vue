@@ -58,4 +58,31 @@
         align-items: center;
         gap: 20px
     }
+
+    .booth-table {
+        border-collapse: collapse;
+      }
+
+      .booth-table tr{
+        height: 10px;
+      }
+      
+      .booth-table th{
+        background: #633273;
+        color: #ffffff;
+      }
+
+      .booth-table td{
+        padding: 0 12px;
+      }
+      
+      /* Alternating row background */
+      .booth-table tbody tr:nth-child(even) {
+        background-color: #ffff;
+      }
+      
+      .booth-table tbody tr:nth-child(odd) {
+        background-color: #e6e6e6;
+      }
+      
 </style>

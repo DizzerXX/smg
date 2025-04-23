@@ -55,6 +55,18 @@ const boothTable = [
   { name: 'TM Berhad', location: 'Booth E01 - Hall E' },
   { name: 'TNG Digital', location: 'Booth E02 - Hall E' },
   { name: 'CelcomDigi', location: 'Booth F01 - Hall F' },
+  { name: 'Maxis', location: 'Booth F02 - Hall F' },
+  { name: 'Top Glove Corporation', location: 'Booth A01 - Hall A' },
+  { name: 'Petronas', location: 'Booth A02 - Hall A' },
+  { name: 'AirAsia', location: 'Booth B01 - Hall B' },
+  { name: 'Shopee Malaysia', location: 'Booth B02 - Hall B' },
+  { name: 'Maybank', location: 'Booth C01 - Hall C' },
+  { name: 'Intel Malaysia', location: 'Booth C02 - Hall C' },
+  { name: 'Sunway Group', location: 'Booth D01 - Hall D' },
+  { name: 'Grab Malaysia', location: 'Booth D02 - Hall D' },
+  { name: 'TM Berhad', location: 'Booth E01 - Hall E' },
+  { name: 'TNG Digital', location: 'Booth E02 - Hall E' },
+  { name: 'CelcomDigi', location: 'Booth F01 - Hall F' },
   { name: 'Maxis', location: 'Booth F02 - Hall F' }
 ]
 
