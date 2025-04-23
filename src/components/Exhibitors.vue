@@ -7,6 +7,11 @@
           <img :src="item.url" :alt="item.logo" />
         </div>
       </div>
+      <div class="image-list">
+        <div class="image-item" v-for="(item, index) in images" :key="index">
+          <img :src="item.url" :alt="`Gallery image ${index + 1}`" />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -55,6 +60,10 @@ export default {
         { logo: 'company28', url: '@/assets/image/exhibitors/company28.png' },
       ],
     },
+    images: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>
@@ -66,5 +75,28 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.image-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image-item {
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 </style>

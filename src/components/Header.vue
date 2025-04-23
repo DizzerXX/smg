@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: calc(100vw - 100px)
