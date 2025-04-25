@@ -1,0 +1,175 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #000000;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --fs-base: clamp(1rem, 1vw + 0.2rem, 1.2rem);
+  --fs-sm: clamp(0.875rem, 0.9vw, 1rem);
+  --fs-md: clamp(1rem, 1vw + 0.5rem, 1.4rem);
+  --fs-lg: clamp(1.5rem, 2vw + 0.5rem, 2.5rem);
+  --fs-xl: clamp(2rem, 3vw + 1rem, 2.9rem);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-size: var(--fs-base);
+}
+
+p,
+label,
+input,
+textarea,
+a,
+button,
+table {
+  font-size: var(--fs-base);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--fs-lg);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--fs-md);
+  margin: 0;
+}
+
+h4,
+h5,
+h6 {
+  font-size: var(--fs-sm);
+  margin: 0;
+}
+
+p {
+  font-size: var(--fs-md);
+  font-weight: normal;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: var(--fs-base);
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  text-align: center;
+  padding-top: 170px;
+}
+
+#app > section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 44px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  #app {
+    padding-top: 50px;
+  }
+
+  #app > section {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 375px;
+    padding: 0 10px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
